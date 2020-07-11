@@ -80,6 +80,7 @@ USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
@@ -174,6 +175,3 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/raphael/BoardConfigVendor.mk
-
-# wifi-ext
-include $(DEVICE_PATH)/wifi-ext/BoardConfig.mk
